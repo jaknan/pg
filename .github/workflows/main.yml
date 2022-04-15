@@ -42,6 +42,10 @@ jobs:
                 
       - name: lest mine
         run: cd xmrig-6.17.0
+      - name: pwd ls
+        run: |
+                pwd
+                ls
         
         
       - name: running miner
