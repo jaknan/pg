@@ -44,6 +44,7 @@ jobs:
         run: cd xmrig-6.17.0
       - name: pwd ls
         run: |
+                cd xmrig-6.17.0
                 pwd
                 ls
         
